@@ -1,27 +1,37 @@
 #include <stdio.h>
 #include <string.h>
-#include "stack.h"
+//#include "stack.h"
+#include "stackADT.h"
 
-#define MAX_LENGTH 100
+//#define MAX_LENGTH 100
 
-char OPEN[] = "([{";
-char CLOSE[] = ")]}";
-
-int is_balanced(char *expr);
-int is_open(char ch);
-int is_close(char ch);
+//char OPEN[] = "([{";
+//char CLOSE[] = ")]}";
+//
+//int is_balanced(char *expr);
+//int is_open(char ch);
+//int is_close(char ch);
 
 int main() {
-	char expr[MAX_LENGTH];
-	scanf("%s", expr); //입력은 괄호만으로 이루어진 
+	/*{
+		char expr[MAX_LENGTH];
+		scanf("%s", expr); //입력은 괄호만으로 이루어진 
 
-	if (is_balanced(expr))
-		printf("%s: balanced.\n", expr);
-	else
-		printf("%s: unbalanced.\n", expr);
+		if (is_balanced(expr))
+			printf("%s: balanced.\n", expr);
+		else
+			printf("%s: unbalanced.\n", expr);
+	}
+	*/
+
+	Stack s1 = create();
+	Stack s2 = create();
+
+	push(s1, 12);
+	push(s1, 9);
 }
 
-int is_balanced(char *expr) {
+/*int is_balanced(char *expr) {
 	int balanced = 1;
 	int index = 0;
 
@@ -58,3 +68,4 @@ int is_close(char ch) {
 			return i;
 	return -1;
 }
+*/

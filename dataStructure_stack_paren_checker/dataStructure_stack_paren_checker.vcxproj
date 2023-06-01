@@ -145,9 +145,11 @@
   <ItemGroup>
     <ClCompile Include="paren_checker.c" />
     <ClCompile Include="stack.c" />
+    <ClCompile Include="stackADT.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stack.h" />
+    <ClInclude Include="stackADT.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
